@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Editor</title>
+    <script src="../../../ckeditor4/ckeditor.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <textarea id="textData" class="textData" name="textData" data-sample-short contenteditable="true">
+    </textarea>
+
+    <script type="text/javascript">
+        CKEDITOR.replace('textData', {
+            extraPlugins: 'ImageInBase64,image2'
+        });
+    </script>
+</body>
+
+</html>
